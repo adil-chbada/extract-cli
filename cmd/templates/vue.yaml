@@ -1,0 +1,83 @@
+# Vue.js Project Configuration
+project_name: "Vue App"
+project_path: "."
+
+# Data file patterns - API data, mock data, assets
+data_patterns:
+  - "src/data/**"
+  - "src/assets/data/**"
+  - "public/data/**"
+  - "src/mock/**"
+  - "mocks/**"
+  - "**/*.csv"
+  - "**/*.xml"
+  - "data/**/*.json"  # Only JSON files in data directories
+  - "src/data/**/*.json"
+  - "public/data/**/*.json"
+
+# Local/configuration file patterns
+local_patterns:
+  - "*.config.js"
+  - "*.config.ts"
+  - ".env*"
+  - "package.json"
+  - "tsconfig.json"
+  - "jsconfig.json"
+  - "vite.config.*"
+  - "vue.config.js"
+  - "nuxt.config.*"
+  - "tailwind.config.*"
+  - "postcss.config.*"
+  - "babel.config.*"
+  - ".eslintrc.*"
+  - ".prettierrc.*"
+  - "vitest.config.*"
+  - "cypress.config.*"
+  # i18n and localization files
+  - "src/i18n/**"
+  - "src/locales/**"
+  - "src/translations/**"
+  - "public/locales/**"
+  - "locales/**"
+  - "**/*i18n*.json"
+  - "**/locales/**/*.json"
+  - "**/translations/**/*.json"
+
+# Main local files that should be included in code
+main_local_files:
+  - "main.js"
+  - "main.ts"
+  - "src/main.js"
+  - "src/main.ts"
+  - "src/App.vue"
+  - "index.html"
+  - "src/i18n/en.json"      # Only main English i18n
+  - "public/locales/en.json" # Only main English locale
+
+# Files and patterns to exclude
+exclude_patterns:
+  - "node_modules/**"
+  - "dist/**"
+  - "build/**"
+  - ".output/**"
+  - ".nuxt/**"
+  - ".next/**"
+  - "coverage/**"
+  - ".nyc_output/**"
+  - "package-lock.json"
+  - "yarn.lock"
+  - "pnpm-lock.yaml"
+  - "*.log"
+  - "logs/**"
+  - ".DS_Store"
+  - "Thumbs.db"
+  - ".vscode/**"
+  - ".idea/**"
+  - "*.swp"
+  - "*.swo"
+  - ".env.local"
+  - ".env.development.local"
+  - ".env.test.local"
+  - ".env.production.local"
+
+use_regex: false

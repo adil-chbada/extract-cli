@@ -1,0 +1,97 @@
+# Python Project Configuration
+project_name: "Python App"
+project_path: "."
+
+# Data file patterns - data files, models, fixtures
+data_patterns:
+  - "data/**"
+  - "datasets/**"
+  - "fixtures/**"
+  - "**/*.csv"
+  - "**/*.xml"
+  - "**/*.sql"
+  - "**/*.db"
+  - "**/*.sqlite*"
+  - "migrations/**"
+  - "data/**/*.json"     # Only JSON files in data directories
+  - "datasets/**/*.json"
+  - "fixtures/**/*.json"
+  - "data/**/*.yaml"
+  - "data/**/*.yml"
+
+# Local/configuration file patterns
+local_patterns:
+  - ".env*"
+  - "*.ini"
+  - "*.cfg"
+  - "*.conf"
+  - "requirements*.txt"
+  - "Pipfile*"
+  - "pyproject.toml"
+  - "setup.py"
+  - "setup.cfg"
+  - "tox.ini"
+  - "pytest.ini"
+  - ".flake8"
+  - ".pylintrc"
+  - "mypy.ini"
+  - "conda.yaml"
+  - "environment.yml"
+  # i18n and localization files
+  - "locale/**"
+  - "locales/**"
+  - "i18n/**"
+  - "translations/**"
+  - "**/*locale*.json"
+  - "**/locale/**/*.json"
+  - "**/locales/**/*.json"
+  - "**/i18n/**/*.json"
+
+# Main local files that should be included in code
+main_local_files:
+  - "main.py"
+  - "app.py"
+  - "run.py"
+  - "manage.py"
+  - "__main__.py"
+  - "wsgi.py"
+  - "asgi.py"
+  - "locale/en/LC_MESSAGES/messages.po"  # Only main English locale
+  - "locales/en.json"                    # Only main English locale
+
+# Files and patterns to exclude
+exclude_patterns:
+  - "__pycache__/**"
+  - "**/__pycache__/**"
+  - "*.pyc"
+  - "*.pyo"
+  - "*.pyd"
+  - ".Python"
+  - "build/**"
+  - "develop-eggs/**"
+  - "dist/**"
+  - "downloads/**"
+  - "eggs/**"
+  - ".eggs/**"
+  - "lib/**"
+  - "lib64/**"
+  - "parts/**"
+  - "sdist/**"
+  - "var/**"
+  - "wheels/**"
+  - "*.egg-info/**"
+  - ".installed.cfg"
+  - "*.egg"
+  - ".env"
+  - "venv/**"
+  - "ENV/**"
+  - "env/**"
+  - ".venv/**"
+  - "poetry.lock"
+  - ".coverage"
+  - ".pytest_cache/**"
+  - ".mypy_cache/**"
+  - ".DS_Store"
+  - "Thumbs.db"
+
+use_regex: false

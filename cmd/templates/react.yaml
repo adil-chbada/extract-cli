@@ -1,0 +1,87 @@
+# React Project Configuration
+project_name: "React App"
+project_path: "."
+
+# Data file patterns - API data, mock data, assets (NO generic *.json here)
+data_patterns:
+  - "src/data/**"
+  - "src/assets/data/**"
+  - "public/data/**"
+  - "src/mocks/**"
+  - "src/__mocks__/**"
+  - "__mocks__/**"
+  - "**/*.csv"
+  - "**/*.xml"
+  - "**/*.sql"
+  - "data/**/*.json"  # Only JSON files in data directories
+  - "src/data/**/*.json"
+  - "public/data/**/*.json"
+
+# Local/configuration file patterns
+local_patterns:
+  - "*.config.js"
+  - "*.config.ts"
+  - ".env*"
+  - "package.json"
+  - "tsconfig.json"
+  - "jsconfig.json"
+  - "webpack.config.*"
+  - "craco.config.*"
+  - "tailwind.config.*"
+  - "postcss.config.*"
+  - "babel.config.*"
+  - ".eslintrc.*"
+  - ".prettierrc.*"
+  - "jest.config.*"
+  - "setupTests.*"
+  # i18n and localization files
+  - "src/i18n/**"
+  - "src/locales/**"
+  - "src/translations/**"
+  - "public/locales/**"
+  - "public/i18n/**"
+  - "**/*i18n*.json"
+  - "**/locales/**/*.json"
+  - "**/translations/**/*.json"
+
+# Main local files that should be included in code
+main_local_files:
+  - "index.js"
+  - "index.ts"
+  - "index.tsx"
+  - "src/index.js"
+  - "src/index.ts"
+  - "src/index.tsx"
+  - "src/App.js"
+  - "src/App.ts"
+  - "src/App.tsx"
+  - "public/index.html"
+  - "src/i18n/en.json"      # Only main English i18n
+  - "public/locales/en/common.json"  # Only main English locale
+
+# Files and patterns to exclude
+exclude_patterns:
+  - "node_modules/**"
+  - "build/**"
+  - "dist/**"
+  - ".next/**"
+  - "out/**"
+  - "coverage/**"
+  - ".nyc_output/**"
+  - "package-lock.json"
+  - "yarn.lock"
+  - "pnpm-lock.yaml"
+  - "*.log"
+  - "logs/**"
+  - ".DS_Store"
+  - "Thumbs.db"
+  - ".vscode/**"
+  - ".idea/**"
+  - "*.swp"
+  - "*.swo"
+  - ".env.local"
+  - ".env.development.local"
+  - ".env.test.local"
+  - ".env.production.local"
+
+use_regex: false

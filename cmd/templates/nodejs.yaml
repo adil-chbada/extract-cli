@@ -1,0 +1,79 @@
+# Node.js Project Configuration
+project_name: "Node.js App"
+project_path: "."
+
+# Data file patterns - databases, data files, assets
+data_patterns:
+  - "data/**"
+  - "db/**"
+  - "database/**"
+  - "**/*.csv"
+  - "**/*.xml"
+  - "**/*.sql"
+  - "assets/data/**"
+  - "public/data/**"
+  - "static/data/**"
+  - "data/**/*.json"  # Only JSON files in data directories
+  - "db/**/*.json"
+  - "database/**/*.json"
+
+# Local/configuration file patterns
+local_patterns:
+  - ".env*"
+  - "*.config.js"
+  - "*.config.json"
+  - "package.json"
+  - "tsconfig.json"
+  - "jsconfig.json"
+  - ".eslintrc.*"
+  - ".prettierrc.*"
+  - "jest.config.*"
+  - "nodemon.json"
+  - "pm2.config.*"
+  - "docker-compose.*"
+  - "Dockerfile*"
+  # i18n and localization files
+  - "locales/**"
+  - "i18n/**"
+  - "translations/**"
+  - "**/*i18n*.json"
+  - "**/locales/**/*.json"
+  - "**/translations/**/*.json"
+
+# Main local files that should be included in code
+main_local_files:
+  - "index.js"
+  - "app.js"
+  - "server.js"
+  - "main.js"
+  - "src/index.js"
+  - "src/app.js"
+  - "src/server.js"
+  - "src/main.js"
+  - "locales/en.json"  # Only main English locale
+  - "i18n/en.json"     # Only main English i18n
+
+# Files and patterns to exclude
+exclude_patterns:
+  - "node_modules/**"
+  - "coverage/**"
+  - ".nyc_output/**"
+  - "package-lock.json"
+  - "yarn.lock"
+  - "pnpm-lock.yaml"
+  - "*.log"
+  - "logs/**"
+  - ".DS_Store"
+  - "Thumbs.db"
+  - ".vscode/**"
+  - ".idea/**"
+  - "*.swp"
+  - "*.swo"
+  - "tmp/**"
+  - "temp/**"
+  - ".env.local"
+  - ".env.development.local"
+  - ".env.test.local"
+  - ".env.production.local"
+
+use_regex: false

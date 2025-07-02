@@ -1,0 +1,83 @@
+# Flutter Project Configuration
+project_name: "Flutter App"
+project_path: "."
+
+# Data file patterns - JSON data, assets, mock data
+data_patterns:
+  - "*.data.dart"
+  - "assets/data/**"
+  - "lib/data/**"
+  - "lib/models/data/**"
+  - "**/*.csv"
+  - "**/*.xml"
+  - "assets/json/**"
+  - "test/fixtures/**"
+  - "test_driver/fixtures/**"
+
+# Local/configuration file patterns (i18n, config, etc.)
+local_patterns:
+  - "pubspec.yaml"
+  - "analysis_options.yaml"
+  - "*.config.dart"
+  - "lib/config/**"
+  - "android/app/build.gradle"
+  - "android/build.gradle"
+  - "android/gradle.properties"
+  - "android/local.properties"
+  - "ios/Runner/Info.plist"
+  - "ios/Podfile"
+  - "web/index.html"
+  - "web/manifest.json"
+  - ".env*"
+  - "firebase.json"
+  - "firestore.rules"
+  - "firestore.indexes.json"
+  # i18n and localization files
+  - "**/*.i18n.json"
+  - "**/*.arb"
+  - "lib/l10n/**"
+  - "assets/i18n/**"
+  - "assets/translations/**"
+  - "assets/locales/**"
+
+# Main local files that should be included in code (only ONE main i18n file)
+main_local_files:
+  - "lib/main.dart"
+  - "lib/app.dart"
+  - "lib/main_*.dart"
+  - "test/widget_test.dart"
+  - "assets/i18n/en.i18n.json"  # Only the main English i18n file
+  - "lib/l10n/app_en.arb"       # Only the main English ARB file
+
+# Files and patterns to exclude
+exclude_patterns:
+  - "**/*.g.dart"
+  - "**/*.freezed.dart"
+  - "**/*.gr.dart"
+  - ".dart_tool/**"
+  - "build/**"
+  - ".flutter-plugins"
+  - ".flutter-plugins-dependencies"
+  - ".packages"
+  - "android/.gradle/**"
+  - "android/app/build/**"
+  - "android/build/**"
+  - "ios/Pods/**"
+  - "ios/Runner.xcworkspace/**"
+  - "ios/Runner.xcodeproj/**"
+  - "ios/.symlinks/**"
+  - "web/build/**"
+  - "coverage/**"
+  - "pubspec.lock"
+  - "ios/Podfile.lock"
+  - "*.log"
+  - ".DS_Store"
+  - "Thumbs.db"
+  - ".vscode/**"
+  - ".idea/**"
+  - "*.swp"
+  - "*.swo"
+  - "*.iml"
+
+# Enable regex patterns
+use_regex: false

@@ -1,0 +1,72 @@
+# Laravel Project Configuration
+project_name: "Laravel App"
+project_path: "."
+
+# Data file patterns - database, models, seeders, etc.
+data_patterns:
+  - "database/**"
+  - "app/Models/**"
+  - "app/Http/Resources/**"
+  - "**/*.sql"
+  - "storage/app/**"
+  - "storage/framework/cache/data/**"
+  - "resources/data/**"
+  - "database/**/*.json"  # Only JSON files in database directories
+  - "storage/app/**/*.json"
+  - "resources/data/**/*.json"
+
+# Local/configuration file patterns
+local_patterns:
+  - ".env*"
+  - "config/**"
+  - "composer.json"
+  - "package.json"
+  - "webpack.mix.js"
+  - "vite.config.js"
+  - "tailwind.config.js"
+  - "phpunit.xml"
+  - "artisan"
+  - "server.php"
+  # i18n and localization files
+  - "resources/lang/**"
+  - "lang/**"
+  - "resources/views/lang/**"
+  - "**/*lang*.json"
+  - "**/lang/**/*.json"
+  - "**/translations/**/*.json"
+
+# Main local files that should be included in code
+main_local_files:
+  - "index.php"
+  - "public/index.php"
+  - "bootstrap/app.php"
+  - "resources/lang/en.json"  # Only main English language file
+  - "lang/en.json"            # Only main English language file
+
+# Files and patterns to exclude
+exclude_patterns:
+  - "vendor/**"
+  - "node_modules/**"
+  - "public/build/**"
+  - "public/hot"
+  - "public/storage"
+  - "storage/logs/**"
+  - "storage/framework/cache/**"
+  - "storage/framework/sessions/**"
+  - "storage/framework/testing/**"
+  - "storage/framework/views/**"
+  - "bootstrap/cache/**"
+  - "coverage/**"
+  - "composer.lock"
+  - "package-lock.json"
+  - "yarn.lock"
+  - "pnpm-lock.yaml"
+  - ".phpunit.result.cache"
+  - "Homestead.json"
+  - "Homestead.yaml"
+  - "npm-debug.log"
+  - "yarn-error.log"
+  - ".DS_Store"
+  - "Thumbs.db"
+
+use_regex: false

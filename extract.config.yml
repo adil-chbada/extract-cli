@@ -1,0 +1,99 @@
+# Go Project Configuration
+project_name: "Go App"
+project_path: "."
+
+# Data file patterns - databases, data files, assets
+data_patterns:
+  - "data/**"
+  - "db/**"
+  - "database/**"
+  - "migrations/**"
+  - "**/*.csv"
+  - "**/*.xml"
+  - "**/*.sql"
+  - "assets/data/**"
+  - "static/data/**"
+  - "web/static/data/**"
+  - "data/**/*.json"  # Only JSON files in data directories
+  - "db/**/*.json"
+  - "database/**/*.json"
+  - "testdata/**/*.json"  # Test data files
+  - "fixtures/**"
+
+# Local/configuration file patterns
+local_patterns:
+  - ".env*"
+  - "*.config.yaml"
+  - "*.config.yml"
+  - "*.config.json"
+  - "go.mod"
+  - "go.sum"
+  - "Makefile"
+  - "*.mk"
+  - "docker-compose.*"
+  - "Dockerfile*"
+  - ".dockerignore"
+  - "*.toml"
+  - "config/**"
+  - "configs/**"
+  - "deployment/**"
+  - "k8s/**"
+  - "helm/**"
+  # Build and CI/CD files
+  - ".github/**"
+  - ".gitlab-ci.yml"
+  - "*.goreleaser.yml"
+  - "*.goreleaser.yaml"
+  # i18n and localization files
+  - "locales/**"
+  - "i18n/**"
+  - "translations/**"
+  - "**/*i18n*.json"
+  - "**/locales/**/*.json"
+  - "**/translations/**/*.json"
+
+# Main local files that should be included in code
+main_local_files:
+  - "main.go"
+  - "cmd/*/main.go"
+  - "go.mod"
+  - "Makefile"
+  - "README.md"
+  - "config/config.go"
+  - "configs/config.go"
+  - "locales/en.json"  # Only main English locale
+  - "i18n/en.json"     # Only main English i18n
+
+# Files and patterns to exclude
+exclude_patterns:
+  - "vendor/**"
+  - "bin/**"
+  - "build/**"
+  - "dist/**"
+  - "*.exe"
+  - "*.dll"
+  - "*.so"
+  - "*.dylib"
+  - "coverage.out"
+  - "coverage.html"
+  - "*.test"
+  - "*.prof"
+  - "*.log"
+  - "logs/**"
+  - ".DS_Store"
+  - "Thumbs.db"
+  - ".vscode/**"
+  - ".idea/**"
+  - "*.swp"
+  - "*.swo"
+  - "tmp/**"
+  - "temp/**"
+  - ".env.local"
+  - ".env.development.local"
+  - ".env.test.local"
+  - ".env.production.local"
+  - "__debug_bin*"
+  - "*.orig"
+  - "*.rej"
+
+use_regex: false
